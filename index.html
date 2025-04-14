@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Html Website</title>
+    <style>
+        * {
+            font-family: cursive;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+        }
+
+        .right-child {
+            width: 100%;
+            height: fit-content;
+            border: 2px solid black;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        .header-box-one {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .nav-list-box-one {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        .header-box-two {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+        }
+
+        h1,
+        h4,
+        h5,
+        h2,
+        h3 {
+            margin: 5px !important;
+        }
+
+        .nav-list-box-two {
+            padding: 0px !important;
+        }
+
+        .main-content-box {
+
+            display: flex;
+            border-bottom: 2px solid black;
+        }
+
+        .common.box-one>ul>li {
+            padding: 5px 20px;
+        }
+
+        .common {
+            width: 33%;
+            border-right: 2px solid black;
+        }
+
+
+        .common.box-two {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .common.box-three {
+            border-right: 0px;
+            padding: 20px;
+        }
+
+        .visit {
+            font-size: 12px;
+        }
+
+        .content-boxs {
+            padding: 20px;
+        }
+
+        .nav-list-item-courses>li {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        footer {
+            padding: 20px 20px 305px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .review-box-parent {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+
+        .common-review-box {
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 15px;
+
+        }
+
+        pre {
+            color: grey;
+            margin: 0px !important;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 80%;
+            gap: 40px;
+        }
+
+        @media (min-width:0) and (max-width:650px) {
+            .parent {
+                flex-direction: column-reverse;
+            }
+        }
+
+        @media (min-width:651px) and (max-width:900px) {
+            .parent {
+                display: none;
+            }
+        }
+
+        /* Parent left child  */
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .left-child {
+            border: 2px solid;
+        }
+
+        .left-logo-img {
+            width: 100px;
+        }
+
+        .nav-list-box-left {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            gap: 10px;
+            position: relative;
+        }
+
+        .header-box-left {
+            align-items: center;
+            text-align: center;
+        }
+
+        .main .box-one-left {
+            text-align: center;
+        }
+
+
+
+        .nav-list-box-two-left {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-list-box-two-left li {
+            padding: 3px;
+            background-color: #E9ECEF;
+
+        }
+
+        .content-boxs-left {
+            background-color: #E9ECEF;
+        }
+
+        .box-three-left {
+            padding: 10px;
+        }
+
+        .review-section-left-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <section class="right-child">
+            <header>
+                <section class="header-box-one">
+                    <section class="logo-box"><img src="logo.png" class="logo" alt="logo"></section>
+
+                    <section class="nav-box">
+                        <ul class="nav-list-box-one">
+                            <a href="index.html">
+                                <li>Home /
+                                </li>
+                            </a>
+                            <a href="">
+                                <li> Projects /
+                                </li>
+                            </a>
+                            <a href="contact.html">
+                                <li> Articles /
+                                </li>
+                            </a>
+                            <a href="articles.html">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </section>
+                </section>
+
+                <section class="header-box-two">
+                    <h1>Frontend Developer</h1>
+                    <h4 style="color: grey;">html only with proper layout, no styling</h4>
+                </section>
+
+            </header>
+            <hr style="border: 1px solid black; margin: 0px !important;">
+
+            <main>
+                <section class="main-content-box">
+                    <div class="common box-one">
+                        <h3 style="padding:20px;">Projects</h3>
+                        <ul class=" nav-list-box-two">
+                            <li>HTML Only Portfolio</li>
+                            <hr style="border: 1px solid black; margin: 0px !important;">
+                            <li>Calculator</li>
+                            <hr style="border: 1px solid black; margin: 0px !important;">
+                            <li>Quiz App</li>
+                            <hr style="border: 1px solid black; margin: 0px !important;">
+                            <li>Countdown Timer</li>
+                            <hr style="border: 1px solid black; margin: 0px !important;">
+                            <li>Product Upcoming Page</li>
+                        </ul>
+                    </div>
+                    <div class="common box-two">
+                        <div class="content-box-parent-one content-boxs">
+                            <h3>Work Experience</h3>
+                            <div class="content-box">
+                                <h5>roadmap.sh</h5>
+                                <p>Solved all front-end projects</p>
+                                <a href="" style="color: rgb(65, 65, 167);" class="visit">Visit My Profile</a>
+                            </div>
+                        </div>
+                        <hr style="border: 1px solid black; margin: 0px !important;">
+                        <div class="content-box-parent-two content-boxs">
+                            <h3>OpenSource Work</h3>
+                            <div class="content-box">
+                                <p>Contributed to 50 opensource projects, made my own with 200 github stars</p>
+                                <a href="" style="color: rgb(65, 65, 167);" class="visit">Visit My Profile</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="common box-three">
+                        <h3>Education</h3>
+                        <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions. </p>
+                        <h4>Courses I Took:</h4>
+                        <ul style="padding: 0px;" class="nav-list-item-courses">
+                            <li>- Object Oriented Programming </li>
+                            <li>-Data Structures and Algorithms </li>
+                            <li>- Web Engineering </li>
+                            <li>- Artificial Intelligence </li>
+                            <li>-Human Computer Interaction </li>
+                            <li>- Computer Graphics </li>
+                            <li>-Database Management Systems </li>
+                            <li>-Distributed Database Systems </li>
+                            <li>-Discreet Mathematics</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <section class="review-section">
+                    <h3>Reviews from my teachers</h3>
+                    <div class="review-box-parent">
+                        <div class="common-review-box crb-one">
+                            <p>John doe was a brilliant student; always stood out with his assignments </p>
+
+                            <pre>
+Jnae doe
+Assistant Prof.
+</pre>
+                        </div>
+                        <div class="common-review-box crb-two">
+                            <p>John doe was a brilliant student; always stood out with his assignments </p>
+                            <pre>
+Jnae doe
+Assistant Prof.
+                        </pre>
+                        </div>
+                        <div class="common-review-box crb-three">
+                            <p>John doe was a brilliant student; always stood out with his assignments </p>
+                            <pre>
+Jnae doe
+Assistant Prof.
+                        </pre>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section>
+                    <p>&copy; all rights reserved 2025</p>
+                </section>
+            </footer>
+        </section>
+        <!--  -->
+        <!-- Sectoin Left -->
+        <!--  -->
+
+        <section class="left-child">
+            <div class="header">
+                <div class="left-logo"><img class="left-logo-img" src="left logo.png" alt=""></div>
+                <div>
+                    <section class="nav-box-left">
+                        <ul class="nav-list-box-left">
+                            <a href="index.html">
+                                <li>Home
+                                </li>
+                            </a>
+                            <a href="">
+                                <li> Projects
+                                </li>
+                            </a>
+                            <a href="contact.html">
+                                <li> Articles
+                                </li>
+                            </a>
+                            <a href="articles.html">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </section>
+                </div>
+                <div class="left-third">
+                    <section class="header-box-left">
+                        <h1>Frontend Developer</h1>
+                        <h4 style="color: grey; width: 260px; margin:auto; ">html only with proper layout, no styling
+                        </h4>
+                    </section>
+                </div>
+            </div>
+            <hr style="border: 1px solid black; margin: 0px !important;">
+
+            <div class="main">
+                <div class="box-one-left">
+                    <h3 style="padding:3px;">Projects</h3>
+                    <ul class=" nav-list-box-two-left">
+                        <hr style="border: 1px solid black; margin: 0px !important;">
+                        <li>HTML Only Portfolio</li>
+                        <hr style="border: 1px solid black; margin: 0px !important;">
+                        <li>Calculator</li>
+                        <hr style="border: 1px solid black; margin: 0px !important;">
+                        <li>Quiz App</li>
+                        <hr style="border: 1px solid black; margin: 0px !important;">
+                        <li>Countdown Timer</li>
+                        <hr style="border: 1px solid black; margin: 0px !important;">
+                        <li>Product Upcoming Page</li>
+                        <hr style="border: 1px solid black; margin: 0px !important;">
+                    </ul>
+                </div>
+
+
+                <div class="box-one-left">
+                    <h3 style="padding:2px;">Work Experience</h3>
+                    <hr style="border: 1px solid black; margin: 0px !important;">
+                    <div class="content-box-parent-one content-boxs-left">
+                        <div class="content-box">
+                            <h3 style="margin: 0 !important;">roadmap.sh</h3>
+                            <p>Solved all front-end projects</p>
+                            <a href="" style="color: rgb(65, 65, 167);" class="visit">Visit My Profile</a>
+                        </div>
+                    </div>
+                    <hr style="border: 1px solid black; margin: 0px !important;">
+                    <div class="content-box-parent-two content-boxs-left">
+                        <h3 style="margin: 0 !important;">OpenSource Work</h3>
+                        <div class=" content-box">
+                            <p>Contributed to 50 opensource projects, made my own with 200 github stars</p>
+                            <a href="" style="color: rgb(65, 65, 167);" class="visit">Visit My Profile</a>
+                        </div>
+                    </div>
+                    <hr style="border: 1px solid black; margin: 0px !important;">
+                </div>
+
+                <div class=" box-three-left">
+                    <h3 style="margin: 0 !important; text-align: center;">Education</h3>
+                    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions. </p>
+                    <h4>Courses I Took:</h4>
+                    <ul style="padding: 0px;" class="nav-list-item-courses">
+                        <li>- Object Oriented Programming </li>
+                        <li>-Data Structures and Algorithms </li>
+                        <li>- Web Engineering </li>
+                        <li>- Artificial Intelligence </li>
+                        <li>-Human Computer Interaction </li>
+                        <li>- Computer Graphics </li>
+                        <li>-Database Management Systems </li>
+                        <li>-Distributed Database Systems </li>
+                        <li>-Discreet Mathematics</li>
+                    </ul>
+                </div>
+                <hr style="border: 1px solid black; margin: 0px !important;">
+            </div>
+            <div class="footer">
+                <section class="review-section-left-child">
+                    <h3 style="margin: 0 !important; text-align: center;">Reviews from my teachers</h3>
+                    <div class=" review-box-parent-left">
+                        <div class="common-review-box crb-one">
+                            <p>John doe was a brilliant student; always stood out with his assignments </p>
+
+                            <pre>
+Jnae doe
+Assistant Prof.
+</pre>
+                        </div>
+                        <section style="text-align: center;">
+                            <p>&copy; all rights reserved 2025</p>
+                        </section>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
